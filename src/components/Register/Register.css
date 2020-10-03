@@ -1,0 +1,96 @@
+.container-register {
+    display: grid;
+    grid-template-columns: 49% 49%;
+}
+.left-container {
+    max-width: 100%;
+    height: 100%;
+}
+.right-container {
+    max-width : 100%;
+    height: 100%;
+    position: fixed;
+    right: 0;
+}
+
+.img-classiBuilding {
+    max-width : 50vw;
+    height: 100vh;
+    background-size: contain;
+    background-position: center;
+}
+
+.register-text {
+    width: auto;
+    height: auto;
+}
+
+.register-form {
+    margin-left: 60px;
+}
+
+.lock-register {
+    font-size: 13px;
+    -webkit-transfrom : scaleX(-1);
+    transform: scaleX(-1);
+    vertical-align: middle;
+    
+}
+
+.google-btn{
+    background-color: #dd4b39;
+    color: white;
+    width: 200px;
+    padding: 10px 5px;
+    filter: brightness(100%);
+}
+
+.google-btn:hover, .facebook-btn:hover{
+    filter: brightness(90%);
+    color: white;
+}
+
+.facebook-btn{
+    background-color: #3B5998;
+    color: white;
+    width: 200px;
+    padding: 10px 5px;
+    margin-left: 10px;
+}
+
+.switch-second {
+    margin-left: 30px;
+}
+
+@media only screen and (max-width: 1035px){
+    .right-container {
+        display: none
+    }
+    .container-register {
+        grid-template-columns: 95%;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .social-btn {
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .facebook-btn {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+    .register-form {
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width : 350px) {
+    .switch-second {
+        margin-left: 0px;
+    }
+    .switch-btn {
+        display: flex;
+        flex-flow: column wrap;
+    }
+}

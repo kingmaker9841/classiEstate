@@ -1,0 +1,112 @@
+
+.search-container {
+    background: linear-gradient(rgba(216, 208, 208, 0.8), rgba(230, 226, 226, 0.8));
+    position : absolute;
+    width: 80vw;
+    height: 43.4vh;
+    border: 1px solid transparent;
+    border-radius: 5rem 5rem 0.3rem 0.3rem;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 50;
+}
+
+.search-logo-img {
+
+}
+
+.search-title {
+    color: black;
+    text-align: center;
+    margin-left: 18rem;
+}
+
+.search-buyrent {
+    color: black;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.search-buyrent-text {
+    padding: 1rem 1.2rem;
+    border-top-right-radius: 15px;
+}
+
+.search-group-text {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: flex-end;
+}
+
+.buy, .rent {
+    width: auto;
+    height: auto;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: black;
+}
+
+.rent {
+    margin-left: 2rem;
+}
+
+.buy:hover , .rent:hover {
+    color: white;
+}
+
+.active-search {
+    /* background-color:#b3d294; */
+    background-color: #5cb85c;
+    transition: background-color 0.3s ease;
+    cursor : pointer;
+}
+
+.search-form-box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+
+/*search box css start here*/
+.search-sec{
+    padding: 2rem;
+    position: relative;
+    margin-top: 8rem;
+}
+.search-slt{
+    display: block;
+    width: 100%;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: #55595c;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    height: calc(3rem + 2px) !important;
+    border-radius:0;
+
+}
+.wrn-btn{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    height: calc(3rem + 2px) !important;
+    border-radius:0;
+}
+@media (min-width: 992px){
+    .search-sec{
+        position: relative;
+        top: -114px;
+        background: rgba(26, 70, 104, 0.51);
+    }
+}
+
+@media (max-width: 992px){
+    .search-sec{
+        background: #1A4668;
+    }
+}
+

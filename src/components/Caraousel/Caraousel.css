@@ -1,0 +1,7 @@
+.slider {
+    width: 100vw;
+    max-height: 100vh;
+    filter: brightness(80%);
+    background-size: cover;
+    background-position: center;
+}
